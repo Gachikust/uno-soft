@@ -31,7 +31,7 @@ public class Main {
             bw.write(countMessage);
             System.out.println(countMessage);
             for (int i = 0; i < groupsList.size(); i++) {
-                bw.write("Группа " + i+'\n');
+                bw.write("Группа " + (i+1)+'\n');
                 List<String> linesIds = groupsList.get(i);
                 for (String linesId : linesIds) {
                     bw.write(linesId + '\n');
