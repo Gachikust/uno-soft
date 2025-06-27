@@ -19,6 +19,7 @@ public class Main {
         }catch (IOException e){
             System.out.println("Ошибка чтения файла"+e);
         }
+
         if(lines == null){
             System.out.println("Пустой файл");
             throw new IOException("empty file");

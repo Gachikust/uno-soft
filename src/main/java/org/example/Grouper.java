@@ -5,6 +5,7 @@ import java.util.*;
 public class Grouper {
 
     public List<List<String>> groupLines(List<String> lines) {
+        lines = lines.stream().distinct().toList();
         int n = lines.size();
         DSU dsu = new DSU(n);
         List<Map<String, Integer>> columnIdentifiers = new ArrayList<>();
